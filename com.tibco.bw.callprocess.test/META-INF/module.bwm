@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:rest="http://xsd.tns.tibco.com/bw/models/binding/rest" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scact="http://xsd.tns.tibco.com/amf/models/sca/componentType" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmi:id="_NjC4oJosEeaG8dHevcgRTw" targetNamespace="http://tns.tibco.com/bw/composite/com.tibco.bw.callprocess.test" name="com.tibco.bw.callprocess.test" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:service xmi:id="_KcsN4Jo7EeayALvZo_UDbQ" name="sayhello" promote="ComponentSayHello/sayhello">
+    <sca:interface.wsdl xmi:id="_Kc0wwJo7EeayALvZo_UDbQ" interface="http://xmlns.example.com/20161024174237PLT#wsdl.interface(sayhello)" scaext:wsdlLocation="../Processes/com/tibco/bw/callprocess/test/package1/SayHello.bwp"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_KdDaQJo7EeayALvZo_UDbQ" name="RestService" path="/sayhello" docBasePath="http://localhost:7777/com.tibco.bw.callprocess.test" docResourcePath="SayHello" basePath="/" connector="com.tibco.bw.callprocess.test.SayHello" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/com.tibco.bw.callprocess.test.package1.SayHello-SayHello.json">
+      <operation xmi:id="_KdJg4Jo7EeayALvZo_UDbQ" operationName="get" nickname="get-sayhello" httpMethod="GET" responseStyle="element">
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <parameters xmi:id="_Ke2KAJo7EeayALvZo_UDbQ"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_KdJg4Zo7EeayALvZo_UDbQ" bindingName="RestService"/>
+  </sca:service>
+  <sca:property xmi:id="_N8rgoJosEeaG8dHevcgRTw" name="BW.DEPLOYMENTUNIT.TYPE" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_N83G0JosEeaG8dHevcgRTw" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_N87_UJosEeaG8dHevcgRTw" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_N9A30JosEeaG8dHevcgRTw" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_N9FJQJosEeaG8dHevcgRTw" name="BW.DOMAIN.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_N9JasJosEeaG8dHevcgRTw" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_N9NFEJosEeaG8dHevcgRTw" name="BW.APPSPACE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_N9RWgJosEeaG8dHevcgRTw" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_N9W2EJosEeaG8dHevcgRTw" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:component xmi:id="_NrEzQJosEeaG8dHevcgRTw" name="ComponentProcess" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_NrEzQZosEeaG8dHevcgRTw" processName="com.tibco.bw.callprocess.test.package1.Process"/>
+  </sca:component>
+  <sca:component xmi:id="_KceygJo7EeayALvZo_UDbQ" name="ComponentSayHello" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_KcfZkJo7EeayALvZo_UDbQ" processName="com.tibco.bw.callprocess.test.package1.SayHello"/>
+    <sca:service xmi:id="_KcnVYJo7EeayALvZo_UDbQ" name="sayhello">
+      <sca:interface.wsdl xmi:id="_KcojgJo7EeayALvZo_UDbQ" interface="http://xmlns.example.com/20161024174237PLT#wsdl.interface(sayhello)" scaext:wsdlLocation="../Processes/com/tibco/bw/callprocess/test/package1/SayHello.bwp"/>
+    </sca:service>
+  </sca:component>
+</sca:composite>

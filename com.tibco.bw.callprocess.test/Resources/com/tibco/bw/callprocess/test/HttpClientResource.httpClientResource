@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jndi:namedResource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:http="http://xsd.tns.tibco.com/bw/models/sharedresource/httpclient" xmlns:jndi="http://xsd.tns.tibco.com/amf/models/sharedresource/jndi" xmi:id="_RFLk0Zo7EeayALvZo_UDbQ" name="com.tibco.bw.callprocess.test.HttpClientResource" type="http:HttpClientConfiguration">
+  <jndi:configuration xsi:type="http:HttpClientConfiguration" xmi:id="_RFP2QJo7EeayALvZo_UDbQ" httpClientVersion="httpcomponents">
+    <tcpDetails xmi:id="_RFV84Jo7EeayALvZo_UDbQ" port="8080">
+      <substitutionBindings xmi:id="_o40ZIJo7EeayALvZo_UDbQ" template="host" propName="BW.HOST.NAME"/>
+    </tcpDetails>
+  </jndi:configuration>
+</jndi:namedResource>
